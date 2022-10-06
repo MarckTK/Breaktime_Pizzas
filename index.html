@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería Breaktime</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Img/Logo/Logo PNG.png" />
+    <!-- Fuente de letra -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Enlace con Css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo">Sin Logo :'v</a>
+            <nav class="navbar">
+                <a href="#home">Inicio</a>
+                <a href="#about">Nostros</a>
+                <a href="#menu">Menú</a>
+                <a href="#order">Ordenar</a>
+                <a href="#faq">Consultas</a>
+            </nav>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="order-btn" class="fas fa-box"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart">
+                    <span>(4)</span>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Fin Cabecera -->
+
+    <!-- Sesion Usuario -->
+    <div class="user-account">
+
+        <section>
+
+            <div id="close-account"><span>Cerrar</span></div>
+
+            <div class="user">
+                <p><span>No te encuentras registrado :(</span></p>
+            </div>
+
+            <div class="display-orders">
+                <p>Pizza-1 <span>( S/.12- x 2 )</span></p>
+                <p>Pizza-3 <span>( S/.6- x 1 )</span></p>
+                <p>Pizza-6 <span>( S/.16- x 4 )</span></p>
+                <p>Pizza-7 <span>( S/.8- x 1 )</span></p>
+            </div>
+
+            <div class="flex">
+
+                <form action="" method="post">
+                    <h3>Inicie sesión</h3>
+                    <input type="email" name="email" required class="box" placeholder="Correo Electrónico"
+                        maxlength="50">
+                    <input type="password" name="pass" required class="box" placeholder="Contraseña" maxlength="20">
+                    <input type="submit" value="Iniciar Sesión" name="login" class="btn">
+                </form>
+
+                <form action="" method="post">
+                    <h3>Regístrese</h3>
+                    <input type="text" name="name" required class="box" placeholder="Ingrese su Nombre" maxlength="20">
+                    <input type="email" name="email" required class="box" placeholder="Correo Electrónico"
+                        maxlength="50">
+                    <input type="password" name="pass" required class="box" placeholder="Contraseña" maxlength="20">
+                    <input type="password" name="cpass" required class="box" placeholder="Confirmar Contraseña"
+                        maxlength="20">
+                    <input type="submit" value="Registrarse" name="register" class="btn">
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- Enlace con Js -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
