@@ -294,6 +294,105 @@ section {
     color: var(--black);
 }
 
+.shopping-cart {
+    position: fixed;
+    top: 0;
+    right: -110%;
+    width: 35rem;
+    z-index: 1100;
+    background-color: var(--light-bg);
+    border-left: var(--border);
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.shopping-cart.active {
+    right: 0;
+}
+
+.shopping-cart #close-cart {
+    text-align: right;
+    margin-bottom: 2.5rem;
+}
+
+.shopping-cart #close-cart span {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--red);
+    text-decoration: underline;
+}
+
+.shopping-cart #close-cart span:hover {
+    color: var(--black);
+}
+
+.shopping-cart .box {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    background-color: var(--white);
+    margin: 1.7rem 0;
+}
+
+.shopping-cart .box .fa-times {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--red);
+}
+
+.shopping-cart .box .fa-times:hover {
+    color: var(--black);
+}
+
+.shopping-cart .box img {
+    width: 7rem;
+}
+
+.shopping-cart .box .content p {
+    font-size: 1.8rem;
+    color: var(--light-color);
+}
+
+.shopping-cart .box .content p span {
+    color: var(--red);
+}
+
+.shopping-cart .box .content form {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.shopping-cart .box .content form .qty {
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    width: 8rem;
+}
+
+.shopping-cart .box .content form .fa-edit {
+    width: 5.5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    color: var(--black);
+}
+
+.shopping-cart .box .content form .fa-edit:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
 
 /* Consultas */
 @media (max-width:991px) {
