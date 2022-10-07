@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- Enlace con Css -->
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
     <!-- Cabecera -->
     <header class="header">
         <section class="flex">
-            <a href="#home" class="logo">Sin Logo :'v</a><!-- Se tiene que ajustar el Logo -->
+            <b>
+                <a href="#home" class="logo">Breaktime</a>
+            </b><!-- Se tiene que ajustar el Logo -->
             <nav class="navbar">
                 <a href="#home">Inicio</a>
                 <a href="#about">Nostros</a>
@@ -40,7 +41,6 @@
 
     <!-- Sesion Usuario -->
     <div class="user-account">
-
         <section>
 
             <div id="close-account"><span>Cerrar</span></div>
@@ -57,7 +57,6 @@
             </div>
 
             <div class="flex">
-
                 <form action="" method="post">
                     <h3>Iniciar sesión</h3>
                     <input type="email" name="email" required class="box" placeholder="Correo Electrónico"
@@ -78,8 +77,9 @@
                 </form>
             </div>
         </section>
-
     </div>
+
+    <!-- ORDENES -->
     <div class="my-orders">
         <section>
             <div id="close-orders"><span>Cerrar</span></div>
@@ -110,10 +110,10 @@
         </section>
     </div>
 
+    <!-- CARRITO -->
     <div class="shopping-cart">
         <section>
             <div id="close-cart"><span>Cerrar</span></div>
-
             <div class="box">
                 <a href="#" class="fas fa-times"></a>
                 <img src="Img/Pizzas/clasica-1 PNG.png" alt="">
@@ -161,8 +161,47 @@
                     </form>
                 </div>
             </div>
-
             <a href="#order" class="btn">Nueva Orden</a>
+        </section>
+    </div>
+
+    <!-- INICIO -->
+    <div class="home-bg">
+        <section class="home" id="home">
+            <div class="slide-container">
+                <div class="slide active">
+                    <div class="image">
+                        <img src="Img/Pizzas/home-img-1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Pizza casera de Pepperoni</h3>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="image">
+                        <img src="Img/Pizzas/home-img-2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Pizza con Champiñones</h3>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="image">
+                        <img src="Img/Pizzas/home-img-3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Mascarpone y Champiñones</h3>
+                        <div class="fas fa-angle-left" onclick="prev()"></div>
+                        <div class="fas fa-angle-right" onclick="next()"></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
