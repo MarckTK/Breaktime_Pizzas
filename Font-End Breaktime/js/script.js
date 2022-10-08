@@ -12,21 +12,17 @@ document.querySelector('#close-account').onclick = () =>{
 }
 
 let myOrders = document.querySelector('.my-orders');
-
 document.querySelector('#order-btn').onclick = () =>{
     myOrders.classList.add('active');
 }
-
 document.querySelector('#close-orders').onclick = () =>{
     myOrders.classList.remove('active');
 }
 
 let cart = document.querySelector('.shopping-cart');
-
 document.querySelector('#cart-btn').onclick = () =>{
     cart.classList.add('active');
 }
-
 document.querySelector('#close-cart').onclick = () =>{
     cart.classList.remove('active');
 }
@@ -51,3 +47,11 @@ function prev(){
     index = (index - 1 + slides.length) % slides.length;
     slides[index].classList.add('active');
 }
+
+let accordion = document.querySelectorAll('.faq .accordion-container .accordion');
+accordion.forEach(acco =>{
+    acco.onclick = () =>{
+        accordion.forEach(remove => remove.classList.remove('active'));
+        acco.classList.add('active');
+    }
+});

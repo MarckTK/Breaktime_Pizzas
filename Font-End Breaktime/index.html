@@ -50,10 +50,10 @@
             </div>
 
             <div class="display-orders">
-                <p>Pizza 01 <span>( S/12- x2 )</span></p>
-                <p>Pizza 02 <span>( S/8- x1 )</span></p>
-                <p>Pizza 03 <span>( S/16- x4 )</span></p>
-                <p>Pizza 04 <span>( S/8- x1 )</span></p>
+                <p>Clásica <span>(S/12- x 2)</span></p>
+                <p>Cherry <span>(S/8- x 1)</span></p>
+                <p>FullQueso <span>(S/16- x 4)</span></p>
+                <p>Siciliana <span>(S/8- x 1)</span></p>
             </div>
 
             <div class="flex">
@@ -161,7 +161,7 @@
                     </form>
                 </div>
             </div>
-            <a href="#order" class="btn">Nueva Orden</a>
+            <a href="#order" class="btn">Ordenar Ahora</a>
         </section>
     </div>
 
@@ -227,7 +227,7 @@
 
             <div class="box">
                 <img src="Img/Fondo/Compartir.png" alt="">
-                <h3>Disfrútalo con tus Amigos</h3>
+                <h3>Disfrútalo en Compañía</h3>
                 <p>No esperes mucho tiempo, aprovecha de nuestras pizzas especiales y comparte momentos agradables con
                     tu familia o mejores amigos.</p>
                 <a href="#menu" class="btn">Nuestro Menú</a>
@@ -235,7 +235,7 @@
         </div>
     </section>
 
-    <!-- ORDENAR -->
+    <!-- MENÚ -->
     <section id="menu" class="menu">
         <h1 class="heading">Nuestro Menú</h1>
         <div class="box-container">
@@ -330,6 +330,149 @@
             </div>
         </div>
     </section>
+
+    <!-- ORDENAR -->
+    <section class="order" id="order">
+        <h1 class="heading">Ordenar Ahora</h1>
+        <form action="" method="post">
+            <div class="display-orders">
+                <p>Clásica <span>(S/12- x 2)</span></p>
+                <p>Cherry <span>(S/8- x 1)</span></p>
+                <p>FullQueso <span>(S/16- x 4)</span></p>
+                <p>Siciliana <span>(S/8- x 1)</span></p>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <span>Nombre:</span>
+                    <input type="text" name="name" class="box" required placeholder="Ingrese su nombre" maxlength="20">
+                </div>
+                <div class="inputBox">
+                    <span>Número:</span>
+                    <input type="number" name="number" class="box" required placeholder="Ingrese su número" min="0">
+                </div>
+                <div class="inputBox">
+                    <span>Método de Pago</span>
+                    <select name="method" class="box">
+                        <option value="cash on delivery">En efectivo</option>
+                        <option value="credit card">Tarjeta de Crédito</option>
+                        <option value="paypal">Paypal</option>
+                        <option value="paytm">Yape</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>Dirección:</span>
+                    <input type="text" name="flat" class="box" required placeholder="Donde lo ubicamos" maxlength="50">
+                </div>
+                <div class="inputBox">
+                    <span>Referencia:</span>
+                    <input type="text" name="street" class="box" required placeholder="Cerca a que lugar"
+                        maxlength="50">
+                </div>
+                <div class="inputBox">
+                    <span>Código Postal:</span>
+                    <input type="number" name="pin_code" class="box" required placeholder="ej. 04013" min="0">
+                </div>
+            </div>
+            <input type="submit" value="Ordenar Ahora" class="btn" name="order">
+        </form>
+    </section>
+
+    <!-- CONSULTAS -->
+    <section class="faq" id="faq">
+        <h1 class="heading">Consultas</h1>
+        <div class="accordion-container">
+            <div class="accordion active">
+                <div class="accordion-heading">
+                    <span>¿Cómo puedo ordenar?</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accrodion-content">
+                    Es muy facil, primero te registras en nuestra página para despúes ir a nuestra sección de Ordenar y
+                    elegir su pizza. Una vez hecho eso, lo añades a su carrito y procedes a realizar la compra
+                    rellenando sus datos.
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <span>¿Cómo me registro?</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accrodion-content">
+                    Para poderse registrar es simple, se va en el ícono de usuario y completa los datos necesarios para
+                    lograrse registrar en nuestra página y poder realizar sus compras.
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <span>¿Cuánto tiempo tarda la entrega?</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accrodion-content">
+                    La entrega se realizará en menos de 30 minutos, en caso de que el pedido pase el tiempo estabecido,
+                    su pizza será Gratis. (Esto dependerá en el lugar que viva)
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <span>¿Puedo ordenar grandes cantidades?</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accrodion-content">
+                    Por su puesto, puede realizar la cantidad de pizzas que desee, el único limitante de su compra es su
+                    billetera, no nosotros. Comparta su felicidad con sus seres más queridos.
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <span>¿Cómo me puedo contactar?</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accrodion-content">
+                    Puede escribirnos a nuestro número que aparece abajo, de igual forma nos puede llamar o enviarnos un
+                    correo electrónico para así contactarnos y brindarles un buen servicio.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>Números de Celular</h3>
+                <p>+51 996034101</p>
+                <p>01 412-1210</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Local</h3>
+                <p>Av. la Marina 2010, San Miguel 15088</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>Horario de Atención</h3>
+                <p>08:00am hasta 11:30pm</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>Correo Electrónico</h3>
+                <p>breaktime@gmail.com</p>
+                <p>breaktimestore@gmail.com</p>
+            </div>
+        </div>
+        <div class="credit">
+            &copy; copyright @ 2022 by <span>Mr. Breaktime</span> | Todos los derechos reservados!
+        </div>
+    </div>
 
     <!-- Enlace con Js -->
     <script src="./js/script.js"></script>
