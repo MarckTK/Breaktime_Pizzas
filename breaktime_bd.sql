@@ -38,7 +38,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `password`) VALUES
-(1, 'admin', '12345');
+(1, 'admin', '8cb2237d0679ca88db6464eac60da96345513964');
 
 -- --------------------------------------------------------
 

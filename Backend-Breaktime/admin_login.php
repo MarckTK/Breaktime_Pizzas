@@ -5,7 +5,7 @@
     if(isset($_POST['login'])){
         $name = $_POST['name'];
         $name = filter_var($name, FILTER_SANITIZE_STRING);
-        $pass = ($_POST['pass']);
+        $pass = sha1($_POST['pass']);
         $pass = filter_var($pass, FILTER_SANITIZE_STRING);
 
         $select_admin = $conn->prepare("SELECT * FROM `admin` WHERE name=? AND password=?");
