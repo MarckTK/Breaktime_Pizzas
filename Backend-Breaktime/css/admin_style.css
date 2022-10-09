@@ -271,6 +271,38 @@ section {
     border: var(--border);
 }
 
+.dashboard .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.dashboard .box-container .box {
+    padding: 2rem;
+    text-align: center;
+    border-radius: .5rem;
+    border: var(--border);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.dashboard .box-container .box p {
+    margin: 1rem 0;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    color: var(--light-color);
+    font-size: 2rem;
+    padding: 1.5rem;
+    border: var(--border);
+}
+
+.dashboard .box-container .box h3 {
+    font-size: 4rem;
+    color: var(--black);
+}
+
 
 /* ARREGLOS */
 @media (max-width:991px) {
