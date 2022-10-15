@@ -303,6 +303,71 @@ section {
     color: var(--black);
 }
 
+.add-products form {
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border: var(--border);
+    padding-top: 1.5rem;
+}
+
+.add-products form .box {
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    border-radius: .5rem;
+    border: var(--border);
+    background-color: var(--light-bg);
+    margin: 1rem 0;
+}
+
+.show-products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 33rem);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.show-products .box-container .box {
+    padding: 2rem;
+    text-align: center;
+    border-radius: .5rem;
+    border: var(--border);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.show-products .box-container .box img {
+    width: 100%;
+}
+
+.show-products .box-container .box .price {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: .5rem;
+    background-color: var(--black);
+    color: var(--white);
+    padding: .5rem 1rem;
+    font-size: 2rem;
+}
+
+.show-products .box-container .box .price span {
+    font-size: 2.5rem;
+}
+
+.show-products .box-container .box .name {
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+
 
 /* ARREGLOS */
 @media (max-width:991px) {
