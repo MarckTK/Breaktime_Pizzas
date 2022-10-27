@@ -2,7 +2,7 @@
 
 include 'config.php';
 session_start();
-$admin_id=$_SESSION['admin_id'];
+$admin_id = $_SESSION['admin_id'];
 if(!isset($admin_id)){
     header('location:admin_login.php');
 };
@@ -16,18 +16,18 @@ if(isset($_POST['register'])){
     $cpass = sha1($_POST['cpass']);
     $cpass = filter_var($cpass, FILTER_SANITIZE_STRING);
 
-    $select_admin = $conn->prepare("SELECT * FROM `admin` WHERE name=? ");
+    $select_admin = $conn->prepare("SELECT * FROM `admin` WHERE name = ?");
     $select_admin->execute([$name]);
-    
+
     if($select_admin->rowCount() > 0){
         $message[] = '¡Nombre de ususario existente!';
     }else{
         if($pass = !$cpass){
             $message [] = '¡Confirmar contraseña no coincide!';
         }else{
-            $insert_admin =$conn->prepare("INSERT INTO `admin` (name, password) VALUES(?.?)");
-            $insert_admin->execute([$name,$cpass]);
-            $message[]='Administrador registrado correctamente';
+            $insert_admin = $conn->prepare("INSERT INTO `admin`(name, password) VALUES(?,?)");
+            $insert_admin->execute([$name, $cpass]);
+            $message[] = 'Administrador(a) registrado correctamente!';
         }
     }
 }
@@ -52,7 +52,7 @@ if(isset($_POST['register'])){
 
 <body>
 
-    <?php include 'admin_header.php'?>
+    <?php include 'admin_header.php' ?>
 
     <section class="form-container">
         <form action="" method="post">
