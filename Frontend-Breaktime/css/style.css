@@ -728,7 +728,6 @@ section {
 }
 
 @media (max-width:768px) {
-
     #menu-btn {
         display: inline-block;
     }
@@ -764,7 +763,6 @@ section {
 }
 
 @media (max-width:450px) {
-
     html {
         font-size: 50%;
     }
