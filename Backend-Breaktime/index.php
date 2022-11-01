@@ -269,7 +269,7 @@ if(isset($_POST['order'])){
                 <p> Dirección: <span><?= $fetch_orders['address']; ?></span> </p>
                 <p> Método de Pago: <span><?= $fetch_orders['method']; ?></span> </p>
                 <p> Pedidos: <span><?= $fetch_orders['total_products']; ?></span> </p>
-                <p> Precio Total: <span>$<?= $fetch_orders['total_price']; ?>/-</span> </p>
+                <p> Precio Total: <span>S/<?= $fetch_orders['total_price']; ?></span> </p>
                 <p> Estado de Pago: <span
                         style="color:<?php if($fetch_orders['payment_status'] == 'Pendiente'){ echo 'red'; }else{ echo 'green'; }; ?>"><?= $fetch_orders['payment_status']; ?></span>
                 </p>
