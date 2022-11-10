@@ -1,6 +1,17 @@
 <?php
 
 include 'config.php';
+
+session_start();
+
+if(isset($_SESSION['user_id'])){
+    $user_id = $_SESSION['user_id'];
+}else{
+    $user_id = '';
+};
+
+/* Causante del Error (Porfa si pueden vincularlo correctamente se le agradece) */
+/* include 'config.php';
 session_start();
 if(isset($_SESSION['user_id'])){
     $user_id = $_SESSION['user_id'];
@@ -10,7 +21,7 @@ if(isset($_SESSION['user_id'])){
     }else{
     $user_id = '';
     }
-};
+}; */
 
 if(isset($_POST['register'])){
 
@@ -183,7 +194,7 @@ if(isset($_POST['order'])){
     <!-- Sesion Usuario -->
     <div class="user-account">
         <section>
-
+            <!-- Esto es para acivar el Botón del Panel de Control -->
             <!-- <div id="login-admin">
                 <section class="form-container">
                     <form action="" method="post">
